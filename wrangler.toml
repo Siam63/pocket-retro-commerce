@@ -5,7 +5,7 @@ pages_build_output_dir = "./public"
 [[d1_databases]]
 binding = "DB"
 database_name = "pocket-retro-db"
-database_id = "03cd1094c6397aee8a43b24bdb4f4e86"
+database_id = "b547f84b-659d-42da-83f4-00de907f33ec"
 
 [vars]
 PAYPAL_ENV = "sandbox"
