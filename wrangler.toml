@@ -1,0 +1,14 @@
+name = "pocket-retro-commerce"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pocket-retro-db"
+database_id = "03cd1094c6397aee8a43b24bdb4f4e86"
+
+[vars]
+PAYPAL_ENV = "sandbox"
+SHIPPING_CA_CENTS = "0"
+SHIPPING_INTL_CENTS = "0"
+# Set ACCESS_TEAM_DOMAIN, ACCESS_AUD, ETRANSFER_EMAIL and PayPal credentials in Pages settings.

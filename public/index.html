@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Pocket Retro | R36S Consoles</title>
+    <link href="/style.css" rel="stylesheet">
+    <script defer id="paypal-sdk"
+            src="https://www.paypal.com/sdk/js?client-id=REPLACE_ME&currency=CAD&intent=capture"></script>
+    <script defer src="/store.js"></script>
+</head>
+<body>
+<header><a class="brand" href="/">🐉 POCKET <em>RETRO</em></a>
+    <nav><a href="#shop">Consoles</a><a href="#checkout">Checkout</a><a href="/admin.html">Admin</a></nav>
+</header>
+<main>
+    <section class="hero"><span class="eyebrow">RETRO GAMING, REIMAGINED</span>
+        <h1>Play the classics.<br><span>Anywhere.</span></h1>
+        <p>R36S handheld consoles and accessories. Shop directly, with secure checkout and live availability.</p><a
+                class="primary" href="#shop">Explore consoles →</a></section>
+    <section id="shop">
+        <div class="sectionhead"><h2>Shop Pocket Retro</h2>
+            <p>Stock updates automatically as orders are reserved.</p></div>
+        <div class="grid" id="products">Loading inventory…</div>
+    </section>
+    <section class="checkout" id="checkout">
+        <div><h2>Your cart</h2>
+            <div id="cart">Your cart is empty.</div>
+            <strong id="total"></strong>
+            <p class="muted">Shipping is calculated at checkout. Prices in CAD.</p></div>
+        <form id="orderForm"><h2>Checkout</h2><label>Full name<input autocomplete="name" maxlength="180" name="name"
+                                                                     required></label><label>Email<input
+                autocomplete="email" name="email" required type="email"></label><label>Country<select name="country"
+                                                                                                      required>
+            <option value="CA">Canada</option>
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="AU">Australia</option>
+            <option value="OTHER">Other (contact us)</option>
+        </select></label><label>Street address<input autocomplete="street-address" maxlength="180" name="address"
+                                                     required></label>
+            <div class="pair"><label>City<input maxlength="180" name="city" required></label><label>Province /
+                State<input maxlength="180" name="region" required></label></div>
+            <label>Postal / ZIP code<input maxlength="180" name="postal" required></label><label>Payment method<select
+                    id="method" name="method">
+                <option value="etransfer">Interac e-Transfer (Canada)</option>
+                <option value="paypal">PayPal (online)</option>
+            </select></label>
+            <button class="primary" id="submit" type="submit">Reserve items & continue</button>
+            <div id="feedback" role="status"></div>
+            <div id="paypal-button-container"></div>
+        </form>
+    </section>
+    <footer>© Pocket Retro · <a href="mailto:REPLACE_SUPPORT_EMAIL">Contact support</a> · Shipping fees are displayed
+        before payment.
+    </footer>
+</main>
+</body>
+</html>
