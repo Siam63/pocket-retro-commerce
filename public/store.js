@@ -155,3 +155,32 @@ $("#method").onchange = (e) => {
     $("#orderForm").elements.country.value = "CA";
 };
 load();
+
+// Smooth section navigation
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (event) {
+        const targetId = this.getAttribute('href');
+
+        if (!targetId || targetId === '#') return;
+
+        const target = document.querySelector(targetId);
+        if (!target) return;
+
+        event.preventDefault();
+
+        const header = document.querySelector('header');
+        const offset = header ? header.offsetHeight + 20 : 20;
+
+        const destination =
+            target.getBoundingClientRect().top +
+            window.scrollY -
+            offset;
+
+        window.scrollTo({
+            top: Math.max(0, destination),
+            behavior: 'smooth'
+        });
+
+        history.replaceState(null, '', targetId);
+    });
+});

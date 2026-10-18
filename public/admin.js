@@ -74,7 +74,7 @@ async function load() {
             f.querySelector(".result").textContent = err.message;
           }
         }),
-    );
+     );
   } catch (e) {
     $("#products").textContent =
       "Admin access not configured or request failed: " + e.message;
