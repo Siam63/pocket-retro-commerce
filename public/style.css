@@ -621,3 +621,52 @@ footer {
   }
 }
 
+
+/* ========================================
+   POCKET RETRO HEADER LOGO
+   ======================================== */
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  padding: 0;
+}
+
+.header-logo {
+    display: block;
+    width: auto;
+    height: 90px;
+    max-width: 210px;
+    object-fit: contain;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.brand-logo:hover .header-logo {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 10px rgba(0, 140, 255, 0.45));
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header-logo {
+    height: 65px;
+    max-width: 145px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-logo {
+    transition: none;
+  }
+
+  .brand-logo:hover .header-logo {
+    transform: none;
+  }
+}
+
